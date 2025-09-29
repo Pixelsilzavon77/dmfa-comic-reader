@@ -1,0 +1,103 @@
+{
+  "name": "dmfa-comic-reader",
+  "version": "1.0.0-alpha.4",
+  "description": "A modern, unofficial desktop reader for the webcomic DMFA.",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "electron:start": "electron .",
+    "start:electron": "vite & electron .",
+    "dist": "npm run build && electron-builder",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:windows": "npm run build && electron-builder --windows",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:alpha:linux": "npm run build && electron-builder --linux --publish=never",
+    "dist:alpha:windows": "npm run build && electron-builder --windows --publish=never",
+    "dist:alpha:mac": "npm run build && electron-builder --mac --publish=never",
+    "build:alpha:android": "./scripts/build-alpha-android.sh",
+    "build:alpha:linux": "./scripts/build-alpha-linux.sh",
+    "build:alpha:windows": "./scripts/build-alpha-windows.sh",
+    "build:alpha:mac": "./scripts/build-alpha-mac.sh"
+  },
+  "author": "AI Assistant",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/app": "^7.1.0",
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "electron": "^29.1.5",
+    "electron-builder": "^24.9.1",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  },
+  "build": {
+    "appId": "com.dmfa.reader.unofficial",
+    "productName": "DMFA Comic Reader",
+    "artifactName": "${productName}-${version}.${ext}",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "!src/**/*",
+      "!scripts/**/*",
+      "!android/**/*",
+      "!*.md"
+    ],
+    "directories": {
+      "output": "release/alpha"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": ["x64"]
+        }
+      ],
+      "category": "Graphics",
+      "description": "A modern, unofficial desktop reader for the webcomic DMFA",
+      "desktop": {
+        "Comment": "Read DMFA comics with enhanced navigation and features",
+        "Keywords": "comic;reader;dmfa;webcomic;",
+        "MimeType": "application/x-dmfa-comic;"
+      },
+      "icon": "electron/icon.png"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "electron/icon.png"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "electron/icon.png",
+      "category": "public.app-category.graphics-design"
+    },
+    "dmg": {
+      "sign": false,
+      "writeUpdateInfo": false
+    },
+    "extraMetadata": {
+      "name": "dmfa-comic-reader"
+    }
+  }
+}

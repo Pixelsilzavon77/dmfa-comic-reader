@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+*.tmp
+*.temp
+
+# Archive files (you have src.zip which seems to be a backup)
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Capacitor
+.capacitor/
+
+# Electron
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Release builds
+release/
+
+# Android build artifacts (keep source files like icons in src/)
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+android/.gradle/
+android/local.properties
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+.tmp/
+temp/

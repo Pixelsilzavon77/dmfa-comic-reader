@@ -1,0 +1,115 @@
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Ensure full height on mobile */
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Adjust comic viewer for mobile */
+  .comic-viewer-container {
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Make images fit screen better */
+  .comic-image {
+    max-height: calc(100vh - 120px);
+    width: auto;
+    object-fit: contain;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  /* Adjust navigation for touch */
+  .nav-controls {
+    position: fixed;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 24px;
+    backdrop-filter: blur(8px);
+    z-index: 50;
+  }
+
+  .nav-button {
+    min-width: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  /* Adjust landing page for mobile */
+  .comic-card {
+    margin: 8px;
+    padding: 16px;
+    touch-action: manipulation;
+  }
+
+  /* Modals and popups */
+  .modal-content {
+    width: 90%;
+    max-height: 80vh;
+    margin: 10vh auto;
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .popup-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    border-radius: 16px 16px 0 0;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  /* Touch navigation areas */
+  .touch-area-left,
+  .touch-area-right {
+    position: fixed;
+    top: 25%;
+    height: 50%;
+    width: 30%;
+    touch-action: manipulation;
+    z-index: 40;
+  }
+
+  .touch-area-left {
+    left: 0;
+  }
+
+  .touch-area-right {
+    right: 0;
+  }
+
+  /* Header adjustments */
+  .header {
+    padding: calc(0.5rem + env(safe-area-inset-top)) 0.5rem 0.5rem;
+  }
+
+  .header button {
+    min-width: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  /* Safe area insets for modern phones */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}
