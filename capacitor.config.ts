@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.dmfareader.app',
-  appName: 'DMFA Comic Reader',
+  appName: 'Unofficial DMFA Reader',
   webDir: 'dist',
   server: {
     androidScheme: 'https'

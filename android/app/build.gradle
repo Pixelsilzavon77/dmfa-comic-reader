@@ -7,8 +7,8 @@ android {
         applicationId "com.dmfareader.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 100002
-        versionName "1.0.0-alpha.2"
+        versionCode 100100
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -21,13 +21,12 @@ android {
             debuggable true
             minifyEnabled false
             applicationIdSuffix ".alpha"
-            versionNameSuffix "-alpha"
-            resValue "string", "app_name", "DMFA Reader (Alpha)"
+            resValue "string", "app_name", "Unofficial DMFA Reader"
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "app_name", "DMFA Comic Reader"
+            resValue "string", "app_name", "Unofficial DMFA Reader"
         }
     }
 }

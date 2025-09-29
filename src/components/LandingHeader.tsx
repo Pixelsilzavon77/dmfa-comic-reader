@@ -40,7 +40,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({ onViewCast, onView
         className="text-3xl sm:text-4xl font-bold text-comic-light text-center sm:text-left cursor-default" 
         onClick={handleTitleClick}
       >
-        Unofficial DMFA Collection
+        Unofficial DMFA Reader
       </h1>
       <nav className="flex items-center gap-3 sm:gap-4">
         <button onClick={onViewCast} className={buttonClass}>

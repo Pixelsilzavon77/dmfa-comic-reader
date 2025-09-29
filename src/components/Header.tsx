@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({ chapters, currentPage, onChapter
     <header className="bg-comic-secondary p-4 rounded-lg shadow-lg flex flex-col sm:flex-row justify-between items-center w-full gap-4">
       <button onClick={onGoHome} className="text-left transition-opacity duration-200 hover:opacity-80">
         <h1 className="text-2xl sm:text-3xl font-bold text-comic-light">
-          Unofficial DMFA Collection
+          Unofficial DMFA Reader
         </h1>
       </button>
       <div className="flex items-center gap-2 sm:gap-4">
