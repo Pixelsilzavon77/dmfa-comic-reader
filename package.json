@@ -1,6 +1,6 @@
 {
   "name": "dmfa-comic-reader",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0",
   "description": "A modern, unofficial desktop reader for the webcomic DMFA.",
   "main": "electron/main.js",
   "scripts": {
