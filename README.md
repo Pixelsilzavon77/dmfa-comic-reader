@@ -1,29 +1,29 @@
-# DM## Features
+# A fan made reader for DMFA
 
 ### Core Reading Experience
-- 🔖 **Bookmarking System**: Save your favorite pages and easily return to them
-- 💾 **Progress Tracking**: Automatically save and restore your reading progress
-- 📱 **Mobile-Optimized**: Significantly improved reading experience on Android compared to the original website
-- 📱 **Touch Gestures**: Intuitive swipe navigation on mobile devices  
-- 🖥️ **Cross-Platform**: Works on Windows, Linux, macOS, and Android
-- 📖 **Clean Interface**: Distraction-free reading with easy navigation controls
+- **Bookmarking System**: Save your favorite pages and easily return to them
+- **Progress Tracking**: Automatically save and restore your reading progress
+- **Mobile-Optimized**: Significantly improved reading experience on Android compared to the original website
+- **Touch Gestures**: Intuitive swipe navigation on mobile devices  
+- **Cross-Platform**: Works on Windows, Linux, macOS, and Android
+- **Clean Interface**: Distraction-free reading with easy navigation controls
 
 ### Enhanced Content & Archival Features
-- 📚 **Complete Chapter Listing**: Includes extra chapters not listed on the original site, sourced from Katbox
-- 🎭 **Preserved Cast Pages**: Access to character pages that were previously taken down, preserved for archival purposes
-- 📜 **Enhanced Demonology 101**: Expanded lore section with additional DMFA race information
-- 🎨 **Bonus Comics**: Access to bonus comics from Amber's server that weren't listed in the main archive
-- 🔄 **Auto-Updates**: Automatic content updates for the main comic (in testing)
+- **Complete Chapter Listing**: Includes extra chapters not listed on the original site, sourced from Katbox
+- **Preserved Cast Pages**: Access to character pages that were previously taken down, preserved for archival purposes
+- **Enhanced Demonology 101**: Expanded lore section with additional DMFA race information
+- **Bonus Comics**: Access to bonus comics from Amber's server that weren't listed in the main archive
+- **Auto-Updates**: Automatic content updates for the main comic (in testing)
 
 A modern, unofficial desktop and mobile reader for the DMFA (Dan and Mab's Furry Adventures) webcomic. Built with React, TypeScript, Electron and Capacitor to provide a better reading experience, especially on mobile devices.
 
 ## Features
 
-- � **Bookmarking System**: Save your favorite pages and easily return to them, complete with the ability to set notes on bookmarks
-- � **Progress Tracking**: Automatically save and restore your reading progress
-- 📱 **Mobile-Optimized**: Significantly improved reading experience on Android compared to the original website
-- 📱 **Touch Gestures**: Intuitive swipe navigation on mobile devices
-- �️ **Cross-Platform**: Works on Windows, Linux, and Android
+- **Bookmarking System**: Save your favorite pages and easily return to them, complete with the ability to set notes on bookmarks
+- **Progress Tracking**: Automatically save and restore your reading progress
+- **Mobile-Optimized**: Significantly improved reading experience on Android compared to the original website
+- **Touch Gestures**: Intuitive swipe navigation on mobile devices
+- **Cross-Platform**: Works on Windows, Linux, and Android
 
 ## Prerequisites
 
@@ -66,44 +66,11 @@ Creates a portable `.AppImage` file that runs on most Linux distributions.
 ```
 Creates a portable `.exe` file for Windows.
 
-#### macOS Application
-```bash
-./scripts/build-alpha-mac.sh
-```
-Creates a `.dmg` installer for macOS.
-
 #### Android APK
 ```bash
 ./scripts/build-alpha-android.sh
 ```
 Creates an `.apk` file for Android devices.
-
-### Manual Build Commands
-
-#### Desktop Builds
-```bash
-# Build for your current platform
-npm run dist
-
-# Build for specific platforms
-npm run dist:linux    # Linux AppImage
-npm run dist:windows  # Windows executable
-npm run dist:mac      # macOS application
-```
-
-#### Mobile Builds
-```bash
-# Android
-npm run build:alpha:android
-```
-
-### Build Outputs
-
-All builds are created in the `release/alpha/` directory:
-- **Linux**: `DMFA-Comic-Reader-X.X.X.AppImage`
-- **Windows**: `# Unofficial DMFA Reader-X.X.X.exe` 
-- **macOS**: `DMFA-Comic-Reader-X.X.X.dmg`
-- **Android**: `DMFA-Comic-Reader-X.X.X.apk`
 
 ## Development
 
@@ -149,7 +116,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## Disclaimer
 
-This is an unofficial fan-made application. DMFA (Dan and Mab's Furry Adventures) is created by Amber M. Panyko (Amber Williams) and can be found at [missmab.com](http://www.missmab.com/).
+This is an unofficial fan-made application. DMFA (Dan and Mab's Furry Adventures) is created by Amber M. Williams (Mebs/Ambaaargh) and can be found at [missmab.com](http://www.missmab.com/).
 
 ## Support
 
